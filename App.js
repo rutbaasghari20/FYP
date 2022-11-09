@@ -2,17 +2,11 @@ import React from "react";
 import { SafeAreaView, Text, View, StyleSheet } from "react-native";
 import { Video } from "expo-av";
 import backgroundVid from "./src/assets/video/bgVid.mp4";
-import { useRef } from "react";
 
 const App = () => {
   return (
     <SafeAreaView style={{ flex: 1, position: "relative" }}>
-      <Video
-        style={styles.video}
-        source={{
-          uri: "http://d23dyxeqlo5psv.cloudfront.net/big_buck_bunny.mp4",
-        }}
-      />
+      <Video style={styles.video} source={{ backgroundVid }} />
 
       <View
         style={{
